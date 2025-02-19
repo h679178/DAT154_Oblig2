@@ -225,6 +225,38 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         
         break;
 
+    case WM_KEYDOWN:
+    {
+        switch (wParam)
+        {
+        case VK_UP:
+            if (yCar < 100) {
+                yCar++;
+            }
+                break;
+        case VK_DOWN:
+            if (yCar > 0) {
+                yCar--;
+            }
+            break;
+        case VK_RIGHT:
+            if (xCar < 100) {
+                xCar++;
+            }
+            break;
+        case VK_LEFT:
+            if (xCar > 0) {
+                xCar--;
+            }
+            break;
+        default:
+            break;
+
+        }
+    }
+    break;
+
+
     case WM_LBUTTONDOWN:
     {
         if (yCar < 100) {
