@@ -1,0 +1,19 @@
+# Ignorer Visual Studio filer og kataloger
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignorer komilerte filer
+*.obj
+*.exe
+*.ilk
+*.pdb
+
+# Ignorer loggfiler
+*.log
+
+# Ignorer midlertidige filer
+tmp/
+*.tmp
